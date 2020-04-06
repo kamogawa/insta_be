@@ -1,0 +1,29 @@
+import { authenticateJwt } from "../../../passport"
+import { prisma } from "../../../../generated/prisma-client";
+
+export default {
+  Mutation: {
+    unfollow: async(_, args, { request }) => {
+      authenticateJwt(request);
+      const { id } = args;
+      const { user } = request;
+      try {
+        await prisma.updateUser({
+          where: {
+            id: user.id
+          },
+          data: {
+            following: {
+              disconnect: {
+                id
+              }
+            }
+          }
+        });
+        return true;
+      } catch (e) {
+        return false;
+      }
+    }
+  }
+}

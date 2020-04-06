@@ -8,3 +8,5 @@ instagram api with express + prisma + react
 - [x] Comment on a photo
 - [x] Search by user
 - [x] Search by location
+- [x] Follow User
+- [x] Unfollow User
