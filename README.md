@@ -10,3 +10,5 @@ instagram api with express + prisma + react
 - [x] Search by location
 - [x] Follow User
 - [x] Unfollow User
+- [x] Edit my profile
+- [x] See user profile
