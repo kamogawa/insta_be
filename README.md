@@ -12,3 +12,5 @@ instagram api with express + prisma + react
 - [x] Unfollow User
 - [x] Edit my profile
 - [x] See user profile
+- [x] See MY profile
+- [x] See the full photo
