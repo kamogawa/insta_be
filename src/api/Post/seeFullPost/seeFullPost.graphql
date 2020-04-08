@@ -5,5 +5,5 @@ type FullPost {
 }
 
 type Query {
-  seeFullPot(id: String!): FullPost!
+  seeFullPost(id: String!): FullPost!
 }
