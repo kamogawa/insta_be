@@ -14,3 +14,5 @@ instagram api with express + prisma + react
 - [x] See user profile
 - [x] See MY profile
 - [x] See the full post
+- [x] Upload a photo
+- [x] Edit the photo (Delete)
