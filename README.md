@@ -16,3 +16,7 @@ instagram api with express + prisma + react
 - [x] See the full post
 - [x] Upload a photo
 - [x] Edit the photo (Delete)
+- [x] See the feed
+- [x] See rooms
+- [ ] See room
+- [ ] Send private Message
