@@ -1,11 +1,11 @@
-import { prisma } from "../../../generated/prisma-client";
+import { prisma } from "../../../../generated/prisma-client";
 
 export default {
   Mutation: {
     editUser:  (_, args, {request, isAuthenticated})=> {
       isAuthenticated(request);
       const { user } = request;
-      const { username, email, firstName, lastName, bio } = args;
+      const { username, email, firstName, lastName, bio, avatar} = args;
       return prisma.updateUser({
         where: {
           id: user.id
@@ -15,7 +15,8 @@ export default {
           email, 
           firstName, 
           lastName, 
-          bio
+          bio,
+          avatar
         }
       });
     }
