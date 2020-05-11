@@ -33,7 +33,9 @@ export default {
           connect: { id: user.id }
         },
         to: {
-          connect: { id: roomId ? getTo.id : toId}
+          connect: {
+            id: roomId ? getTo.id : toId
+          }
         },
         room: {
           connect: {
